@@ -4,7 +4,7 @@
   const small = matchMedia('(max-width: 680px)').matches;
   const context = gsap.context(() => {
     const curtain = document.querySelector('.opening-curtain');
-    const header = document.querySelectorAll('.header nav > a');
+    const header = document.querySelectorAll('.header nav > a, .site-header > *');
     document.documentElement.classList.add('motion-running');
     gsap.set(curtain, {clipPath: 'inset(0 0 0 0)'});
     const opening = gsap.timeline({defaults: {ease: 'power4.out'}, onComplete: () => {
