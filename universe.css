@@ -187,3 +187,6 @@ body.universe-page{background:var(--chalk);color:var(--night)}
 .training-reel figcaption{display:flex;justify-content:space-between;gap:16px;border-top:1px solid #777e77;margin-top:18px;padding-top:12px;font-size:1rem}
 .training-reel figcaption span{color:#aeb6ae;font-size:.8rem;letter-spacing:.12em}
 @media(max-width:680px){.training-reels{grid-template-columns:1fr;gap:65px;margin-top:90px}.training-reel-portrait{width:min(80%,420px)}.training-reel figcaption{font-size:.9rem}}
+
+.moment-solo{display:block;width:min(620px,100%);margin-left:auto}
+.moment-solo .moment-photo img{height:auto;max-height:none}
