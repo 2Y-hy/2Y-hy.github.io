@@ -48,14 +48,12 @@ body.universe-page{background:var(--chalk);color:var(--night)}
 .moments-heading h2,.lab-intro h2{font-size:clamp(5.5rem,12vw,15rem);font-weight:900;line-height:.78;letter-spacing:-.105em}
 .moments-heading .acid,.lab-intro .acid{color:#83b52b}
 .moments-heading p,.lab-intro p{font-size:1.15rem;line-height:1.7;max-width:270px}
-.moment-spread{display:grid;grid-template-columns:1.3fr .83fr .54fr;gap:clamp(14px,2.5vw,40px);align-items:start}
+.moment-spread{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(14px,2.5vw,40px);align-items:start}
 .moment-photo{margin:0;overflow:hidden}
 .moment-photo img{width:100%;height:clamp(420px,47vw,750px);object-fit:cover;transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
 .moment-photo:hover img{transform:scale(1.035)}
 .moment-primary img{object-position:center}
 .moment-secondary{margin-top:clamp(100px,14vw,230px)}
-.moment-tertiary{margin-top:clamp(45px,6vw,110px)}
-.moment-tertiary img{height:clamp(270px,32vw,510px)}
 .moment-photo figcaption{font-size:.72rem;font-weight:700;letter-spacing:.14em;border-top:1px solid var(--night);padding-top:9px;margin-top:10px}
 .editorial-link{font-size:1rem;font-weight:700;display:inline-flex;gap:35px;align-items:center;border-bottom:1px solid currentColor;padding-bottom:8px;margin-top:clamp(55px,6vw,100px);transition:gap .4s}
 .editorial-link span{font-size:1.5em;line-height:1}
@@ -107,11 +105,9 @@ body.universe-page{background:var(--chalk);color:var(--night)}
 .chapter-banner strong{font-size:clamp(5.5rem,11vw,13rem);line-height:.77;letter-spacing:-.1em;grid-column:2;font-weight:900}
 .chapter-banner p{grid-column:2;font-size:1.2rem;margin-top:45px}
 .game-banner{background:#dfe4db;color:var(--night)}
-.page-life .car-album{padding-block:clamp(110px,12vw,190px)}
-.page-life .car-grid{grid-template-columns:1.32fr .83fr .83fr;gap:clamp(15px,2.2vw,35px)}
-.page-life .car-grid .car-photo img{height:clamp(490px,55vw,810px)}
-.page-life .car-grid .car-photo:first-child img{height:clamp(500px,60vw,890px)}
-.page-life .car-grid .car-photo:nth-child(3){margin-top:clamp(110px,17vw,270px)}
+.page-life .car-album{padding-block:90px 125px}
+.page-life .car-grid{display:block;max-width:1100px}
+.page-life .car-grid .car-photo:first-child img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .page-life .basketball-section{padding-block:clamp(115px,13vw,200px);gap:clamp(50px,9vw,160px)}
 .page-life .basketball-photo img{height:auto;max-height:900px;object-fit:cover}
 .discipline-section{padding:clamp(100px,12vw,190px) clamp(24px,6vw,110px);background:var(--night);color:var(--chalk)}
@@ -166,19 +162,19 @@ body.universe-page{background:var(--chalk);color:var(--night)}
 .page-career #journey{overflow:clip}
 .page-career .universe-footer{margin-top:0}
 @media(max-width:1000px){
- .universe-hero h1{font-size:20vw}.arrival-portrait{right:3%;width:25vw}.person-section{grid-template-columns:1fr 3fr}.moment-spread{grid-template-columns:1.2fr .9fr}.moment-tertiary{display:none}.home-projects a{grid-template-columns:.6fr 1.4fr 1fr auto}.archive-item summary{grid-template-columns:.1fr 1.3fr .5fr auto}
+ .universe-hero h1{font-size:20vw}.arrival-portrait{right:3%;width:25vw}.person-section{grid-template-columns:1fr 3fr}.moment-spread{grid-template-columns:1.2fr .9fr}.home-projects a{grid-template-columns:.6fr 1.4fr 1fr auto}.archive-item summary{grid-template-columns:.1fr 1.3fr .5fr auto}
 }
 @media(max-width:680px){
  html{scroll-padding-top:62px}.site-header{height:64px;padding:0 20px;grid-template-columns:auto 1fr auto;gap:14px}.brand{font-size:1.65rem}.brand span{display:none}.site-nav{justify-content:center;gap:clamp(13px,4vw,24px)}.site-nav a{font-size:.68rem;letter-spacing:.03em}.career-access{font-size:.58rem;letter-spacing:0;white-space:nowrap}.career-access span{display:none}
  .universe-section{padding:95px 20px}.section-index{font-size:.68rem}.universe-hero{height:calc(100svh - 64px);min-height:620px;padding:20px}.hero-meta{font-size:.57rem}.hero-meta span:last-child{max-width:125px;text-align:right}.universe-hero h1{font-size:28vw;left:18px;top:22%;line-height:.8}.universe-hero h1>span+span{margin-left:8vw}.arrival-portrait{width:min(43vw,210px);right:7%;top:49%;padding:8px;box-shadow:10px 12px 0 #0008}.arrival-portrait>span{font-size:.57rem;margin:6px 0 2px}.arrival-bottom{left:20px;right:20px;bottom:20px}.arrival-bottom p{font-size:1rem}.circle-link{width:61px;height:61px;font-size:.58rem}
  .person-section{display:block;min-height:0}.person-main .kicker{margin:50px 0 35px}.person-main h2{font-size:14vw}.person-detail{display:block;margin-top:75px}.giant-side{writing-mode:initial;transform:none;font-size:2rem}.person-detail p{font-size:1rem}
- .moments-heading{display:block;margin:70px 0 50px}.moments-heading h2,.lab-intro h2{font-size:16vw}.moments-heading p{margin-top:45px}.moment-spread{display:grid;grid-template-columns:1.35fr .65fr;gap:12px}.moment-primary img{height:440px}.moment-secondary{margin-top:125px}.moment-secondary img{height:280px}.moment-tertiary{display:none}.moment-photo figcaption{font-size:.6rem}.moments-section .editorial-link{margin-top:60px}
+ .moments-heading{display:block;margin:70px 0 50px}.moments-heading h2,.lab-intro h2{font-size:16vw}.moments-heading p{margin-top:45px}.moment-spread{display:grid;grid-template-columns:1.35fr .65fr;gap:12px}.moment-primary img{height:440px}.moment-secondary{margin-top:125px}.moment-secondary img{height:280px}.moment-photo figcaption{font-size:.6rem}.moments-section .editorial-link{margin-top:60px}
  .obsessions-heading{display:block;margin:70px 0}.obsessions-heading h2{font-size:11vw;margin-top:35px}.obsession-list a{grid-template-columns:27px 1fr auto;gap:10px;padding:24px 0}.obsession-list strong{font-size:2.1rem}.obsession-list em{display:none}.obsession-list b{font-size:1.5rem}
  .lab-intro{display:block;margin:70px 0}.lab-intro p{margin-top:45px}.home-projects a{min-height:170px;display:grid;grid-template-columns:1fr auto;gap:5px 15px;padding:25px 0}.home-projects a>span{grid-column:1/-1}.home-projects strong{font-size:3rem}.home-projects small{grid-column:1}.home-projects b{grid-column:2;grid-row:2/4}
  .ending-section{min-height:680px}.ending-section h2{font-size:16vw}.ending-bottom>div{font-size:.9rem}.universe-footer{padding:45px 20px;display:block}.universe-footer nav{margin:35px 0}.universe-footer small{display:block}
  .universe-page-hero{min-height:calc(100svh - 64px);padding:45px 20px 35px}.universe-page-hero h1{font-size:17vw;line-height:.9;overflow-wrap:anywhere}.page-hero-rule{display:block}.page-hero-rule p{font-size:1.3rem}.page-hero-rule span{display:block;margin-top:35px}
  .page-life .life-intro{padding-block:110px}.page-life .life-intro h2{font-size:3rem}.chapter-banner{display:block;min-height:520px;padding:75px 20px}.chapter-banner strong{display:block;font-size:17vw;margin-top:115px}.chapter-banner p{margin-top:60px;font-size:1rem}
- .page-life .car-album{padding-block:100px}.page-life .car-grid{grid-template-columns:1fr 1fr;gap:24px 12px}.page-life .car-grid .car-photo:first-child{grid-column:1/-1}.page-life .car-grid .car-photo img{height:275px}.page-life .car-grid .car-photo:first-child img{height:450px}.page-life .car-grid .car-photo:nth-child(2),.page-life .car-grid .car-photo:nth-child(3){margin-top:0}.page-life .basketball-section{padding-block:110px}.discipline-section,.playground-section{padding:100px 20px}.discipline-layout .story{display:block}.discipline-layout .story-art{height:430px}.discipline-layout .story-copy{padding-top:50px}.discipline-layout .story-copy h3{font-size:3rem}.playground-section>h2{font-size:17vw}.playground-layout .story,.playground-layout .story:last-child{display:flex;flex-direction:column;align-items:stretch;gap:35px;margin-bottom:110px}.playground-layout .story:last-child{margin-bottom:0}.playground-layout .story:last-child .story-art{order:0}.playground-layout .story:last-child .story-copy{order:1}.playground-layout .story-art{height:380px}.playground-layout .story-copy{padding:0}.life-to-lab{padding:120px 20px}.life-to-lab h2{font-size:3.5rem}
+ .page-life .car-album{padding-block:100px}.page-life .car-grid{display:block}.page-life .car-grid .car-photo:first-child img{height:auto;aspect-ratio:4/3}.page-life .basketball-section{padding-block:110px}.discipline-section,.playground-section{padding:100px 20px}.discipline-layout .story{display:block}.discipline-layout .story-art{height:430px}.discipline-layout .story-copy{padding-top:50px}.discipline-layout .story-copy h3{font-size:3rem}.playground-section>h2{font-size:17vw}.playground-layout .story,.playground-layout .story:last-child{display:flex;flex-direction:column;align-items:stretch;gap:35px;margin-bottom:110px}.playground-layout .story:last-child{margin-bottom:0}.playground-layout .story:last-child .story-art{order:0}.playground-layout .story:last-child .story-copy{order:1}.playground-layout .story-art{height:380px}.playground-layout .story-copy{padding:0}.life-to-lab{padding:120px 20px}.life-to-lab h2{font-size:3.5rem}
  .archive-intro{display:block;padding:130px 20px}.archive-intro h2{font-size:3.6rem;margin:60px 0 40px}.archive-intro p{font-size:1rem}.archive-section{padding:100px 20px}.archive-item summary{min-height:170px;grid-template-columns:30px 1fr 25px;gap:10px}.archive-number{margin-top:35px}.archive-title{font-size:clamp(2.8rem,12vw,4.5rem)}.archive-title small{font-size:.63rem;line-height:1.4}.archive-stage{grid-column:2;grid-row:2;margin-top:-25px;font-size:.75rem}.archive-open{grid-column:3;grid-row:1;font-size:2rem}.archive-body{padding:0 0 80px}.archive-body .exploration{display:block}.archive-body .project-mark{min-height:230px;margin-bottom:35px}.archive-body .project-mark strong{font-size:2.5rem}.lab-ending{padding:130px 20px}.lab-ending h2{font-size:4rem}
  .page-career .page-hero{min-height:620px}.page-career .page-hero h1{font-size:13vw}
 }

@@ -31,5 +31,5 @@ for (const button of document.querySelectorAll('[data-copy]')) {
 }
 
 if (typeof GLightbox === 'function' && document.querySelector('.car-photo')) {
-  GLightbox({selector: '.car-photo', touchNavigation: true, loop: true, closeOnOutsideClick: true});
+  GLightbox({selector: '.car-photo', touchNavigation: true, loop: false, closeOnOutsideClick: true});
 }

@@ -5,6 +5,7 @@
   addEventListener('scroll', updateHeader, {passive: true});
   if (!window.gsap || !window.ScrollTrigger || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   gsap.registerPlugin(ScrollTrigger);
+  const anchor = document.getElementById(location.hash.slice(1));
   let mm;
   const context = gsap.context(() => {
     const curtain = document.querySelector('.opening-curtain');
@@ -14,6 +15,7 @@
       curtain.remove();
       document.documentElement.classList.remove('motion-running');
       ScrollTrigger.refresh();
+      if (anchor) requestAnimationFrame(() => anchor.scrollIntoView({behavior: 'instant', block: 'start'}));
     }});
     opening.to(curtain, {clipPath: 'inset(0 0 100% 0)', duration: .75, ease: 'expo.inOut'}, .05)
       .from('.site-header > *', {y: -22, opacity: 0, duration: .7, stagger: .08, clearProps: 'all'}, .42);
@@ -61,6 +63,7 @@
       });
     });
     document.querySelectorAll('.archive-item').forEach(item => item.addEventListener('toggle', () => ScrollTrigger.refresh()));
+    if (anchor) opening.progress(1);
   });
   addEventListener('pagehide', () => { mm?.revert(); context.revert(); }, {once: true});
 })();
