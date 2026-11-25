@@ -149,3 +149,4 @@ body{background:var(--paper);color:var(--ink);overflow-x:clip}
 }
 @media(max-width:390px){.home-hero .giant{font-size:16vw}.profile-object{top:37%}.hero-bottom p{font-size:.87rem}.entry-art{height:120vw}.car-photo img{height:220px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opening-curtain{display:none!important}.header a:not(.logo)>span,.entry-art>*,.entry-caption h3,.car-photo img,.outline-link,.round-link,.tab,.copy{transition:none!important}}
+.page-career .career-hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}

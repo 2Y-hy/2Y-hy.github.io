@@ -1,0 +1,41 @@
+.page-operations{background:var(--chalk);color:var(--night)}
+.page-operations .ops-kicker{font-size:.84rem;letter-spacing:.13em;font-weight:800}
+.ops-hero,.ops-context,.ops-evidence,.ops-approach,.ops-contact{padding-inline:clamp(24px,6vw,110px)}
+.ops-hero{min-height:calc(100svh - 78px);display:flex;flex-direction:column;justify-content:space-between;padding-block:clamp(45px,5vw,80px) 55px}
+.ops-title{margin-block:clamp(42px,5vw,70px)}
+.ops-title>span{font-size:1rem;font-weight:800}
+.ops-title h1{font-size:clamp(4.2rem,8.5vw,9.3rem);line-height:1.04;letter-spacing:-.095em;margin-top:22px}
+.ops-title em{font-style:normal;color:#476720}
+.ops-lead{border-top:1px solid var(--night);padding-top:24px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+.ops-lead p{max-width:790px;font-size:clamp(1.15rem,1.8vw,1.6rem);line-height:1.65}
+.ops-link{display:inline-flex;align-items:center;justify-content:center;gap:30px;background:var(--acid);color:var(--night);border:1px solid var(--acid);padding:13px 22px;font-size:1rem;font-weight:800;transition:background .25s,transform .25s}
+.ops-link:hover{background:var(--chalk);transform:translateY(-3px)}
+.ops-link-dark{background:var(--night);color:var(--chalk);border-color:var(--night)}
+.ops-link-dark:hover{background:transparent;color:var(--night)}
+.ops-context,.ops-approach{display:grid;grid-template-columns:1fr 2fr;gap:clamp(40px,7vw,120px);padding-block:clamp(95px,12vw,170px)}
+.ops-context{background:#dce2d8}
+.ops-context h2,.ops-approach h2{font-size:clamp(3rem,6.2vw,7rem);line-height:1.15;letter-spacing:-.075em}
+.ops-context p,.ops-approach p{max-width:750px;font-size:1.15rem;line-height:1.85;margin-top:35px}
+.ops-text-link{display:inline-block;border-bottom:1px solid currentColor;padding-bottom:7px;margin-top:30px;font-weight:800;font-size:1rem;transition:transform .25s}
+.ops-text-link:hover{transform:translateX(5px)}
+.ops-evidence{background:var(--night);color:var(--chalk);padding-block:clamp(95px,12vw,170px)}
+.ops-evidence h2{font-size:clamp(3.5rem,8vw,8.5rem);line-height:1.13;letter-spacing:-.08em;margin:70px 0 95px}
+.ops-row{display:grid;grid-template-columns:65px 1fr 1.25fr;gap:clamp(25px,5vw,85px);border-top:1px solid #788078;padding:32px 0 65px;align-items:start}
+.ops-row:last-child{border-bottom:1px solid #788078}
+.ops-number{color:var(--acid);font-size:.85rem;font-weight:800}
+.ops-row h3{font-size:clamp(1.8rem,3.3vw,3.6rem);line-height:1.22;letter-spacing:-.05em}
+.ops-row p{font-size:1.08rem;line-height:1.85}
+.ops-row .ops-text-link{color:var(--acid)}
+.ops-tag{display:block;color:#adb7ad;font-size:.84rem;letter-spacing:.08em;margin-top:28px}
+.ops-approach{background:var(--chalk)}
+.ops-approach small{display:block;color:#5e675d;font-size:.9rem;margin-top:30px}
+.ops-contact{background:var(--acid);padding-block:clamp(100px,12vw,160px) 60px}
+.ops-contact h2{font-size:clamp(4rem,9vw,10rem);line-height:1.08;letter-spacing:-.09em;margin-top:55px}
+.ops-contact p{font-size:1.2rem;max-width:660px;line-height:1.75;margin-top:35px}
+.ops-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:55px}
+.ops-actions .ops-link{background:var(--night);color:var(--chalk);border-color:var(--night)}
+.ops-actions .ops-link:hover{background:transparent;color:var(--night)}
+.ops-actions .ops-text-link{margin:0 0 0 20px}
+.ops-contact-meta{border-top:1px solid #1114175c;margin-top:130px;padding-top:18px;font-size:.95rem}
+@media(max-width:700px){.ops-hero{min-height:650px;padding-block:45px}.ops-title{margin-block:85px}.ops-title h1{font-size:clamp(3.2rem,12.5vw,6rem)}.ops-lead{display:block}.ops-lead p{font-size:1.08rem}.ops-lead .ops-link{margin-top:30px}.ops-context,.ops-approach{display:block;padding-block:100px}.ops-context h2,.ops-approach h2{margin-top:55px;font-size:clamp(3.1rem,11vw,5rem)}.ops-context p,.ops-approach p{font-size:1rem}.ops-evidence h2{font-size:clamp(2.6rem,9.5vw,4.5rem);margin:60px 0 75px}.ops-row{grid-template-columns:35px 1fr;gap:15px;padding-bottom:55px}.ops-row h3{font-size:2.1rem}.ops-row>div{grid-column:2}.ops-row p{font-size:1rem}.ops-contact h2{font-size:clamp(3.6rem,12vw,6rem)}.ops-actions .ops-text-link{margin:15px 0 0}.ops-contact-meta{margin-top:80px;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){.ops-link,.ops-text-link{transition:none}}
