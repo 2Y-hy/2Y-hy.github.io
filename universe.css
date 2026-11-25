@@ -180,3 +180,10 @@ body.universe-page{background:var(--chalk);color:var(--night)}
 }
 @media(max-width:360px){.site-header{gap:8px}.site-nav{gap:10px}.site-nav a{font-size:.61rem}.career-access{font-size:.52rem}.arrival-portrait{top:49%}.universe-hero h1{font-size:27vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opening-curtain{display:none!important}.moment-photo img,.circle-link,.obsession-list a,.home-projects a,.archive-open{transition:none!important}.archive-body{animation:none!important}}
+.training-reels{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);align-items:end;gap:clamp(24px,5vw,80px);margin-top:clamp(90px,11vw,170px)}
+.training-reel{min-width:0;margin:0}
+.training-reel-portrait{max-width:500px}
+.training-reel video{display:block;width:100%;height:auto;background:#222;object-fit:cover}
+.training-reel figcaption{display:flex;justify-content:space-between;gap:16px;border-top:1px solid #777e77;margin-top:18px;padding-top:12px;font-size:1rem}
+.training-reel figcaption span{color:#aeb6ae;font-size:.8rem;letter-spacing:.12em}
+@media(max-width:680px){.training-reels{grid-template-columns:1fr;gap:65px;margin-top:90px}.training-reel-portrait{width:min(80%,420px)}.training-reel figcaption{font-size:.9rem}}
